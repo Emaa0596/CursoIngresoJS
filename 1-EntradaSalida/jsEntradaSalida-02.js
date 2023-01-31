@@ -4,8 +4,14 @@ Debemos lograr tomar un nombre con 'prompt'
 y luego mostrarlo por 'alert' al presionar el botón  'mostrar'*/
 function mostrar()
 {
+	let nombreCompleto
+	let apellidoPersona;
 	let nombrePersona; 
 	nombrePersona = prompt ("¿Cual es tu nombre?"); //pido con prompt el nombre al usuario
-	alert (nombrePersona);
+	apellidoPersona = prompt ("¿Cual es tu apellido?")
+	nombreCompleto = nombrePersona + " " + apellidoPersona
+	
+	alert ("tu nombre completo es: " + nombreCompleto);
+	
 }
 
