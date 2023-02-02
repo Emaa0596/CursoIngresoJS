@@ -2,6 +2,10 @@
 /*
 Debemos lograr tomar un nombre con 'prompt' 
 y luego mostrarlo por 'alert' al presionar el botón  'mostrar'*/
+
+// var es global, NO SE USA
+var nombre1
+
 function mostrar()
 {
 	let nombreCompleto
