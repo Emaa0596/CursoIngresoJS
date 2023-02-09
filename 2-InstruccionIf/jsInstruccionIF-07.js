@@ -1,3 +1,4 @@
+// ; va en el fin de una instruccion.
 function mostrar()
 {
 	let edad;
