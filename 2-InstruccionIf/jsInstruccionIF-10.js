@@ -11,7 +11,8 @@ function mostrar()
 	else {
 		if (notaRandom >= 4)
 		alert("Aprobo");
-		else alert("Vamos, la proxima se puede");
+		else 
+		alert("Vamos, la proxima se puede");
 	}
 		
 }

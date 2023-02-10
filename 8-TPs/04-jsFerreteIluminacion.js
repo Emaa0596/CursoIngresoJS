@@ -15,43 +15,48 @@ function CalcularPrecio ()
     let precio; 
     let marca;
     let impuesto;
+    let porcentaje;
 
     lamparas = parseInt(document.getElementById("txtIdCantidad").value);
     marca = document.getElementById("Marca").value;
     precio = 35;
 
-    if(lamparas >= 6){
-        precio = precio - precio * (50/100);
+    if(lamparas > 5){
+        porcentaje = 50;
     }
-    else {
-        if(lamparas == 5 && marca == "Argentinaluz"){
-        precio = precio - precio * (40/100);
+    if (lamparas == 5) {
+        if(marca == "Argentinaluz"){
+        porcentaje = 40;
         }
-        if(lamparas == 5 && marca != "Argentinaluz"){
-            precio = precio - precio * (30/100);
+        else {
+            porcentaje = 30
         }
-        if (lamparas == 4 && (marca == "Argentinaluz" || "FelipeLamparas")){
-            precio = precio - precio * (25/100);
+    if (lamparas == 4){
+        if(marca == "Argentinaluz" || "FelipeLamparas")
+            porcentaje = 25;
         }
-        if (lamparas == 4 && (marca != "Argentinaluz" || "FelipeLamparas")){
-        precio = precio - precio * (20/100);
+        else{
+            porcentaje = 20;
         }
-        if (lamparas == 3 && marca == "Argentinaluz"){
-            precio = precio - precio * (15/100);
+    if (lamparas == 3){
+        if (marca == "Argentinaluz")
+        porcentaje = 15;
         }
-        if (lamparas == 3 && marca == "FelipeLamparas"){
-            precio = precio - precio * (10/100);
+        else if (marca == "FelipeLamparas"){
+            porcentaje = 10;
         }
-        if (lamparas == 3 && (marca != "Argentinaluz" || "FelipeLamparas")){
-            precio = precio - precio * (5/100);
+        else{
+            porcentaje = 5;
         }
     }
+
     precio = precio * lamparas
-    
-    if (precio > 120){
-        impuesto = precio + precio * (10/100);
+    precio = precio - precio * porcentaje/100;
+    if (precio >= 120){
+        impuesto = precio + precio * 10/100;
         impuesto = impuesto - precio;
         alert("Usted pago $" + impuesto + " de IIBB");
     }
+
     document.getElementById("txtIdprecioDescuento").value = precio
 }
