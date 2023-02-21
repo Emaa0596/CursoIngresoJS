@@ -39,7 +39,7 @@ function mostrar()
 			break
 
 		case "Otoño":
-			default: 
+				default: 
 					mensaje ="Se viaja";
 					break
 		case "Primavera":

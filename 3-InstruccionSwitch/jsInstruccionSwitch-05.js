@@ -14,7 +14,8 @@ function mostrar()
 		case 11:
 			mensaje = "Es de mañana";
 			break
-
+		default: mensaje = "No es de mañana";
+			break
 			
 	}
 

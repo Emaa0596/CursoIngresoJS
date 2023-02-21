@@ -64,7 +64,7 @@ function mostrar()
 	descuento = tarifa * ((porcentaje)/100);
 	precioFinal = tarifa + descuento; 
 
-	mensaje = ("el precio final es: $" + precioFinal);
+	mensaje = "el precio final es: $" + precioFinal;
 	alert(mensaje);
 }
 /*en Invierno: bariloche tiene un aumento del 20% cataratas y Cordoba tiene un descuento del 10% Mar del plata tiene un descuento del 20%
