@@ -8,7 +8,7 @@ function mostrar()
 
 	numeroIngresado =parseInt(prompt("ingrese un numero"));
 
-	for(let i = 1; i <= numeroIngresado; i++){
+	for(let i = 1; i < numeroIngresado; i++){
 		if(numeroIngresado%i == 0){
 			console.log(i);
 			cantidadDivisores = cantidadDivisores + 1;

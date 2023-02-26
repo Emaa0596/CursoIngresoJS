@@ -1,5 +1,6 @@
 /*
-al presionar el botón pedir la CLAVE (ayuda: es utn750)*/
+ejercicio comentado abajo
+al presionar el botón pedir la CLAVE (ayuda: es utn750)*/ 
 
 /*El departamento de NUMEROS ESPECIALES  del instituto matemático  FonteCristo  nos está pidiendo una aplicación que verifique las distintas cualidades de los números.
 
@@ -41,8 +42,8 @@ function mostrar()
 			cantImpares = cantImpares +1;
 		}
 
-			for(e = 100; e == 0; e--){
-				if(i%e == 0){
+			for(e = 1; e == 100; e++){
+				if(numeroIngresado%e == 0){
 					numDivisibles = numDivisibles + 1;
 				}
 			}

@@ -32,10 +32,8 @@ function mostrar()
 		}
 		
 		sexoIngresado = prompt("Ingrese f para femenino, m para masculino o b para binario");
-	
 		while(sexoIngresado != "m" && sexoIngresado != "f" && sexoIngresado != "b" 
 		&& sexoIngresado != "M" && sexoIngresado != "F" && sexoIngresado != "B"){
-
 			sexoIngresado = prompt("Error.Ingrese f para femenino, m para masculino o b para binario")
 		}
 	
@@ -51,8 +49,8 @@ function mostrar()
 			if(sexoMasBajo == "M" || sexoMasBajo=="m"){
 				sexoMasBajo = "Masculino"
 			} 
-			else if (sexoMasBajo=="F" || sexoMasBajo == "f"){
-				sexoMasBajo ="Femenino"
+			else if (sexoMasBajo =="F" || sexoMasBajo == "f"){
+				sexoMasBajo = "Femenino"
 			 }
 			else if(sexoMasBajo== "b" || sexoMasBajo== "B"){
 				sexoMasBajo = "Binario"
