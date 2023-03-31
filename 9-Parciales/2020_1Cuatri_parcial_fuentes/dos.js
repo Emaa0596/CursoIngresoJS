@@ -32,7 +32,7 @@ function mostrar()
   let precioTotalBruto;
   let precioConDescuento;
   let mensajeDescuento;
-
+  let mensaje
   
   banderaMasCaro = true;
   respuesta = "si";

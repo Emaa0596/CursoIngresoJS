@@ -56,14 +56,10 @@ function mostrar() {
 			temperatura = parseFloat(prompt("Error.Ingrese la temperatura"));
 		}
 
-		if (banderaMasTemperatura == true) {
+		if (banderaMasTemperatura == true || mayorTemperatura < temperatura){
 			personaMasTemperatura = nombrePasajero;
 			mayorTemperatura = temperatura;
 			banderaMasTemperatura = false;
-		}
-		if (mayorTemperatura < temperatura) {
-			mayorTemperatura = temperatura;
-			personaMasTemperatura = nombrePasajero;
 		}
 		if (edad > 59 && temperatura >= 38) {
 			mayorDe60ConFiebre = mayorDe60ConFiebre + 1;
